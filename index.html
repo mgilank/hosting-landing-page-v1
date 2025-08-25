@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesLanding - Premium Web Hosting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-server text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-dark">TesLanding</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-primary transition-colors">Features</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-primary transition-colors">Pricing</a>
+                    <a href="#support" class="text-gray-700 hover:text-primary transition-colors">Support</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#login" class="text-gray-700 hover:text-primary transition-colors">Login</a>
+                    <a href="#signup" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Get Started</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 bg-gradient-to-br from-light via-white to-blue-50 min-h-screen flex items-center">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-6xl font-bold text-dark leading-tight">
+                            Lightning Fast
+                            <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                                Web Hosting
+                            </span>
+                        </h1>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            Experience blazing-fast performance with our premium web hosting solutions. 
+                            99.9% uptime guaranteed, 24/7 support, and enterprise-grade security.
+                        </p>
+                    </div>
+                    
+                    <!-- Features List -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">99.9% Uptime</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">24/7 Support</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Free SSL Certificate</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">SSD Storage</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#pricing" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors text-center">
+                            Start Free Trial
+                        </a>
+                        <a href="#demo" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center">
+                            View Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image/Illustration -->
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8">
+                            <div class="grid grid-cols-2 gap-4">
+                                <!-- Server Cards -->
+                                <div class="bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                        <i class="fas fa-server text-primary text-xl"></i>
+                                    </div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Cloud Servers</h3>
+                                    <p class="text-sm text-gray-600">High-performance cloud infrastructure</p>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                                        <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                                    </div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Security</h3>
+                                    <p class="text-sm text-gray-600">Enterprise-grade protection</p>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                                        <i class="fas fa-rocket text-accent text-xl"></i>
+                                    </div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Speed</h3>
+                                    <p class="text-sm text-gray-600">Lightning-fast load times</p>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 shadow-lg">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                                        <i class="fas fa-headset text-purple-600 text-xl"></i>
+                                    </div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Support</h3>
+                                    <p class="text-sm text-gray-600">24/7 expert assistance</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fas fa-cloud text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Why Choose TesLanding?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide everything you need to build, deploy, and scale your website with confidence.
+                </p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Blazing Fast Performance</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our optimized servers and CDN ensure your website loads instantly anywhere in the world.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Advanced Security</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Multi-layered security with SSL certificates, DDoS protection, and regular backups.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-expand-arrows-alt text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Easy Scaling</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Scale your resources up or down instantly as your business grows.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">24/7 Expert Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our hosting experts are available around the clock to help you succeed.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-magic text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">One-Click Apps</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Install WordPress, Drupal, and hundreds of other apps with just one click.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-sync-alt text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Automatic Backups</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Daily automated backups ensure your data is always safe and recoverable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gradient-to-br from-light to-blue-50">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose the perfect plan for your needs. No hidden fees, no surprises.
+                </p>
+            </div>
+            
+            <!-- Pricing Cards -->
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Starter</h3>
+                        <p class="text-gray-600 mb-6">Perfect for personal websites</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-dark">$9</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">10GB SSD Storage</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">100GB Bandwidth</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">1 Website</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Free SSL Certificate</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">24/7 Support</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="block w-full bg-gray-100 text-gray-700 text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Professional Plan (Popular) -->
+                <div class="bg-white rounded-xl p-8 shadow-xl border-2 border-primary relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Professional</h3>
+                        <p class="text-gray-600 mb-6">Great for growing businesses</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-dark">$29</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">100GB SSD Storage</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Unlimited Bandwidth</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">10 Websites</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Free SSL Certificate</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">24/7 Priority Support</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Daily Backups</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-6">For large-scale applications</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-dark">$99</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">500GB SSD Storage</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Unlimited Bandwidth</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Unlimited Websites</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Free SSL Certificate</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">24/7 Dedicated Support</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-600"></i>
+                            <span class="text-gray-700">Real-time Backups</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="block w-full bg-gray-100 text-gray-700 text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Join thousands of satisfied customers who trust TesLanding for their web hosting needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#pricing" class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Start Free Trial
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    Contact Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-server text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold">TesLanding</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Premium web hosting solutions with unmatched performance, security, and support.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Web Hosting</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Cloud Hosting</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">VPS Hosting</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Dedicated Servers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Domain Names</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Live Chat</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">System Status</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2025 TesLanding. All rights reserved. Built with ❤️ for amazing websites.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
