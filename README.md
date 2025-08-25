@@ -225,11 +225,6 @@ Created with ❤️ by [Your Name]
 - Font Awesome for the professional icons
 - Google Fonts for typography
 
-## 📞 Support
-
-If you have any questions or need help with customization:
-- Open an issue in the repository
-- Contact: [your-email@example.com]
 
 ---
 
