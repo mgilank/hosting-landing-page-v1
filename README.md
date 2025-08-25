@@ -2,7 +2,7 @@
 
 A modern, responsive web hosting landing page built with HTML and Tailwind CSS. This project showcases a professional design for a web hosting company with all the essential sections needed to convert visitors into customers.
 
-![TesLanding Preview](https://img.shields.io/badge/Status-Live-green) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white) ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
+![Hosting Landing Page Preview](https://img.shields.io/badge/Status-Live-green) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white) ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
 
 ## 🚀 Features
 
@@ -76,7 +76,7 @@ No special requirements! This is a static HTML page that runs in any modern web 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd teslanding
+
    ```
 
 2. Start a local server:
@@ -102,7 +102,7 @@ No special requirements! This is a static HTML page that runs in any modern web 
 ## 📁 Project Structure
 
 ```
-teslanding/
+/
 ├── index.html                 # Main HTML file
 ├── README.md                 # Project documentation
 └── 2025-08-25...png         # Design reference image
@@ -159,7 +159,7 @@ tailwind.config = {
 3. Maintain responsive design principles
 
 ### Modifying Content
-- Update company name: Search and replace "TesLanding"
+- Update company name
 - Change features: Edit the features section cards
 - Update pricing: Modify the pricing cards and plans
 - Add/remove navigation items: Edit the header navigation
