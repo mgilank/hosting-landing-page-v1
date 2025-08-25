@@ -1,4 +1,4 @@
-# TesLanding - Web Hosting Landing Page
+# Simpel Web Hosting Landing Page
 
 A modern, responsive web hosting landing page built with HTML and Tailwind CSS. This project showcases a professional design for a web hosting company with all the essential sections needed to convert visitors into customers.
 
